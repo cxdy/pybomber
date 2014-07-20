@@ -1,7 +1,7 @@
-SMS & Email Bomber in Python
+SMS & Email Bomber 
 ====================
 
-A lightweight SMS &amp; Email Bomber, made in Python. Really! It's only ~2.06KB
+A lightweight SMS &amp; Email Bomber, made in Python.
 
 
 Requirements
