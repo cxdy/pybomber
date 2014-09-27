@@ -11,8 +11,7 @@ Python 2.7.6
 
 A Text Editor
 
-A Gmail Account
-
+An account on http://cock.li/
 
 Usage
 ====================
