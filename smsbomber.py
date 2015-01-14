@@ -8,12 +8,11 @@ import getpass
 
 print"Cody's SMS/Email Bomber \n\r"
 print"Please login with your Cock.li account \n\r"
-print"No account? https://cock.li/register \n\r"
 
-username = raw_input("Cock.li Username: ")
-password = getpass.getpass(prompt='Cock.li Password: ')
+username = raw_input("Gmail Username (user@gmail.com): ")
+password = getpass.getpass(prompt='Gmail Password: ')
 
-obj = s.SMTP("mail.cock.li:587")
+obj = s.SMTP("smtp.gmail.com:587")
 obj.starttls()
 obj.login(username, password)
 print"\n\r"
