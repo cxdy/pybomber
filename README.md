@@ -11,8 +11,6 @@ Python 2.7.6
 
 A Text Editor
 
-An account on http://cock.li/
-
 Usage
 ====================
 
