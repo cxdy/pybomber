@@ -11,6 +11,8 @@ Python 2.7.6
 
 A Text Editor
 
+A Gmail account (Cock.li is no longer supported due to a complaint)
+
 Usage
 ====================
 
