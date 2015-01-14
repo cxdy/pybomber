@@ -7,7 +7,7 @@ import smtplib as s
 import getpass
 
 print"Cody's SMS/Email Bomber \n\r"
-print"Please login with your Cock.li account \n\r"
+print"Please login with your Gmail account \n\r"
 
 username = raw_input("Gmail Username (user@gmail.com): ")
 password = getpass.getpass(prompt='Gmail Password: ')
