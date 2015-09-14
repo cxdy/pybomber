@@ -1,6 +1,5 @@
 # Name: smsbomber.py
-# Coded by cxdy on Github
-# Please don't repost, and don't remove this.
+# Made by cxdy on Github
 
 
 import smtplib as s
