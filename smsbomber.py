@@ -11,7 +11,7 @@ print"Please login with your Gmail account \n\r"
 username = raw_input("Gmail Username (user@gmail.com): ")
 password = getpass.getpass(prompt='Gmail Password: ')
 
-obj = s.SMTP("smtp.gmail.com:587")
+obj = s.SMTP("smtp.gmail.com")
 obj.starttls()
 obj.login(username, password)
 print"\n\r"
